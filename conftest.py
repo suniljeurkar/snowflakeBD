@@ -6,9 +6,9 @@ import os
 @pytest.fixture(scope="module")
 
 def snowflake_conn():
-    account = os.getenv("SNOWFLAKE_ACCOUNT"),  # HidingSensitive Data
-    user = os.getenv("SNOWFLAKE_USER"),
-    private_key_path = os.getenv("SNOWFLAKE_PRIVATE_KEY_PATH"),
+    account = os.getenv("SNOWFLAKE_ACCOUNT")  # HidingSensitive Data
+    user = os.getenv("SNOWFLAKE_USER")
+    private_key_path = os.getenv("SNOWFLAKE_PRIVATE_KEY_PATH")
 
     with open(private_key_path, "rb") as key_file:
         private_key = serialization.load_pem_private_key(

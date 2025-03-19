@@ -11,6 +11,8 @@ def test_total_orders_vs_lineitem_total(snowflake_conn):
     result = cursor.fetchall()
     cursor.close()
     file_path = "BusinessValidation/failed_exports/mismatched_orders.csv"
+    if not os.path.dirname(file_path):
+        raise ValueError(f"❌ Error: Directory path is empty! Check file_path: {file_path}")
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
     if result: #if result is true

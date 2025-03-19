@@ -1,7 +1,5 @@
 import csv
 import os
-from pandas.io.common import file_exists
-
 
 def test_orders_without_customers(snowflake_conn):
     cursor = snowflake_conn.cursor()
@@ -12,10 +10,12 @@ def test_orders_without_customers(snowflake_conn):
     result = cursor.fetchall()
     cursor.close()
     file_path = "BusinessValidation/failed_exports/orderWOcustomers.csv"
+
+    if not os.path.dirname(file_path):
+        raise ValueError(f"Error: Directory path is empty! Check file_path: {file_path}")
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
-
     if result: #if result is true
-
+        file_exists = os.path.isfile(file_path)
         with open (file_path,mode="a" if file_exists else "w",newline="") as file:
             writer = csv.writer(file)
             if not file_exists:
