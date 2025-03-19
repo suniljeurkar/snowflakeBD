@@ -157,4 +157,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ---
 
 For a visual guide on setting up key-pair authentication with Snowflake, you might find this video helpful:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WdCLossuS8U?si=aG_wxXrAATaRFszY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=WdCLossuS8U" target="_blank">
+  <img src="https://img.youtube.com/vi/WdCLossuS8U/0.jpg" alt="Watch on YouTube" width="600">
+</a>
