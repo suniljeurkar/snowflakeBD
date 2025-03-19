@@ -157,5 +157,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ---
 
 For a visual guide on setting up key-pair authentication with Snowflake, you might find this video helpful:
-
-videoSnowflake - Key-pair Authentication and connecting via Pythonturn0search11 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WdCLossuS8U?si=aG_wxXrAATaRFszY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
