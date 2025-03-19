@@ -2,6 +2,8 @@ import pytest
 import snowflake.connector
 from cryptography.hazmat.primitives import serialization
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 @pytest.fixture(scope="module")
 
